@@ -242,8 +242,8 @@ feed 只在调用它的方法内有效, 方法结束, feed 就会消失. 最常�
 
 ```python
 
-input1 = tf.placeholder(tf.types.float32)
-input2 = tf.placeholder(tf.types.float32)
+input1 = tf.placeholder(tf.float32)
+input2 = tf.placeholder(tf.float32)
 output = tf.mul(input1, input2)
 
 with tf.Session() as sess:
@@ -256,7 +256,7 @@ with tf.Session() as sess:
 for a larger-scale example of feeds.
 如果没有正确提供 feed, `placeholder()` 操作将会产生错误.
 MNIST 全连通 [feed 教程](http://wiki.jikexueyuan.com/project/tensorflow-zh/tutorials/mnist_tf.html)
-([source code](https://tensorflow.googlesource.com/tensorflow/+/master/tensorflow/g3doc/tutorials/mnist/fully_connected_feed.py))
+([source code](https://raw.githubusercontent.com/tensorflow/tensorflow/master/tensorflow/examples/tutorials/mnist/fully_connected_feed.py))
 给出了一个更大规模的使用 feed 的例子.
 
 > 原文：[Basic Usage](http://tensorflow.org/get_started/basic_usage.md)  翻译：[@doc001](https://github.com/PFZheng)  校对：[@yangtze](https://github.com/sstruct)
